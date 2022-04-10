@@ -1,4 +1,4 @@
-package mvvm.roomdatabase.aplicacaoconvidados.ui.slideshow
+package mvvm.roomdatabase.aplicacaoconvidados.ui.presentes
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import mvvm.roomdatabase.aplicacaoconvidados.databinding.FragmentSlideshowBinding
+import mvvm.roomdatabase.aplicacaoconvidados.databinding.FragmentAusentesBinding
+import mvvm.roomdatabase.aplicacaoconvidados.databinding.FragmentPresentesBinding
 
-class SlideshowFragment : Fragment() {
+class PresentesFragment : Fragment() {
 
-    private var _binding: FragmentSlideshowBinding? = null
+    private var _binding: FragmentPresentesBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +23,14 @@ class SlideshowFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+        val presentesViewModel =
+            ViewModelProvider(this).get(PresentesViewModel::class.java)
 
-        _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        _binding = FragmentPresentesBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textSlideshow
-        slideshowViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textPresentes
+        presentesViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

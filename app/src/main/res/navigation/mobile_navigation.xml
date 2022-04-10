@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_todos">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="mvvm.roomdatabase.aplicacaoconvidados.ui.home.HomeFragment"
+        android:id="@+id/nav_todos"
+        android:name="mvvm.roomdatabase.aplicacaoconvidados.ui.todos.TodosFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_todos" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="mvvm.roomdatabase.aplicacaoconvidados.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_presentes"
+        android:name="mvvm.roomdatabase.aplicacaoconvidados.ui.presentes.PresentesFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_presentes" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="mvvm.roomdatabase.aplicacaoconvidados.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_ausentes"
+        android:name="mvvm.roomdatabase.aplicacaoconvidados.ui.ausentes.AusentesFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_ausentes" />
 </navigation>
