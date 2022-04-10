@@ -14,4 +14,10 @@
     <string name="todos">Todos</string>
     <string name="ausentes">Ausentes</string>
     <string name="presentes">Presentes</string>
+    <string name="nome">Nome</string>
+    <string name="write_something">Write something</string>
+    <string name="presente">Presente</string>
+    <string name="ausente">Ausente</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="guardar">Guardar</string>
 </resources>
