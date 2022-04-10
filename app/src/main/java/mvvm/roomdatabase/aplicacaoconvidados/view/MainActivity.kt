@@ -1,9 +1,8 @@
-package mvvm.roomdatabase.aplicacaoconvidados
+package mvvm.roomdatabase.aplicacaoconvidados.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -13,6 +12,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
+import mvvm.roomdatabase.aplicacaoconvidados.R
 import mvvm.roomdatabase.aplicacaoconvidados.databinding.ActivityMainBinding
 
 
