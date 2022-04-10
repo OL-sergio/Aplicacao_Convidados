@@ -8,18 +8,18 @@
     <fragment
         android:id="@+id/nav_todos"
         android:name="mvvm.roomdatabase.aplicacaoconvidados.ui.todos.TodosFragment"
-        android:label="@string/menu_home"
+        android:label="@string/todos"
         tools:layout="@layout/fragment_todos" />
 
     <fragment
         android:id="@+id/nav_presentes"
         android:name="mvvm.roomdatabase.aplicacaoconvidados.ui.presentes.PresentesFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/presentes"
         tools:layout="@layout/fragment_presentes" />
 
     <fragment
         android:id="@+id/nav_ausentes"
         android:name="mvvm.roomdatabase.aplicacaoconvidados.ui.ausentes.AusentesFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/ausentes"
         tools:layout="@layout/fragment_ausentes" />
 </navigation>
