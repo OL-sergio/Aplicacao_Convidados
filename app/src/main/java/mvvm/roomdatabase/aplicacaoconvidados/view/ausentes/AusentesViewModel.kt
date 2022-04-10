@@ -1,4 +1,4 @@
-package mvvm.roomdatabase.aplicacaoconvidados.ui.ausentes
+package mvvm.roomdatabase.aplicacaoconvidados.view.ausentes
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

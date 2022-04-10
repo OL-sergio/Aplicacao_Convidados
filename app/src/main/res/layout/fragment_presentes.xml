@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.presentes.PresentesFragment">
+    tools:context=".view.presentes.PresentesFragment">
 
     <TextView
         android:id="@+id/text_presentes"

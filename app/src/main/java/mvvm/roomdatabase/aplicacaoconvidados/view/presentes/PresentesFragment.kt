@@ -1,4 +1,4 @@
-package mvvm.roomdatabase.aplicacaoconvidados.ui.presentes
+package mvvm.roomdatabase.aplicacaoconvidados.view.presentes
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import mvvm.roomdatabase.aplicacaoconvidados.databinding.FragmentAusentesBinding
 import mvvm.roomdatabase.aplicacaoconvidados.databinding.FragmentPresentesBinding
 
 class PresentesFragment : Fragment() {

@@ -1,4 +1,4 @@
-package mvvm.roomdatabase.aplicacaoconvidados.view
+package mvvm.roomdatabase.aplicacaoconvidados
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,8 +12,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
-import mvvm.roomdatabase.aplicacaoconvidados.R
 import mvvm.roomdatabase.aplicacaoconvidados.databinding.ActivityMainBinding
+import mvvm.roomdatabase.aplicacaoconvidados.view.guest.GuestFormActivity
 
 
 class MainActivity : AppCompatActivity() {

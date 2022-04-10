@@ -1,4 +1,4 @@
-package mvvm.roomdatabase.aplicacaoconvidados.ui.ausentes
+package mvvm.roomdatabase.aplicacaoconvidados.view.ausentes
 
 import android.os.Bundle
 import android.view.LayoutInflater

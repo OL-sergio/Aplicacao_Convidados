@@ -1,4 +1,4 @@
-package mvvm.roomdatabase.aplicacaoconvidados.view
+package mvvm.roomdatabase.aplicacaoconvidados.view.guest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,7 +6,6 @@ import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import mvvm.roomdatabase.aplicacaoconvidados.viewmodel.GuestFormViewModel
 import mvvm.roomdatabase.aplicacaoconvidados.R
 import mvvm.roomdatabase.aplicacaoconvidados.databinding.ActivityGuestFormBinding
 
