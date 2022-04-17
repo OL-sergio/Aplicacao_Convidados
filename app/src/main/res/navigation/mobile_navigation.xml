@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_todos"
-        android:name="mvvm.roomdatabase.aplicacaoconvidados.view.todos.TodosFragment"
+        android:name="mvvm.roomdatabase.aplicacaoconvidados.view.todos.AllGuestsFragment"
         android:label="@string/todos"
-        tools:layout="@layout/fragment_todos" />
+        tools:layout="@layout/fragment_all_guests" />
 
     <fragment
         android:id="@+id/nav_presentes"
-        android:name="mvvm.roomdatabase.aplicacaoconvidados.view.presentes.PresentesFragment"
+        android:name="mvvm.roomdatabase.aplicacaoconvidados.view.presentes.PresentsFragment"
         android:label="@string/presentes"
-        tools:layout="@layout/fragment_presentes" />
+        tools:layout="@layout/fragment_presents" />
 
     <fragment
         android:id="@+id/nav_ausentes"
-        android:name="mvvm.roomdatabase.aplicacaoconvidados.view.ausentes.AusentesFragment"
+        android:name="mvvm.roomdatabase.aplicacaoconvidados.view.ausentes.AbsentsFragment"
         android:label="@string/ausentes"
-        tools:layout="@layout/fragment_ausentes" />
+        tools:layout="@layout/fragment_absents" />
 </navigation>

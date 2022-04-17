@@ -1,13 +1,13 @@
-package mvvm.roomdatabase.aplicacaoconvidados.view.todos
+package mvvm.roomdatabase.aplicacaoconvidados.view.ausentes
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class TodosViewModel : ViewModel() {
+class AbsentsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is todos Fragment"
+        value = "This is ausentes Fragment"
     }
     val text: LiveData<String> = _text
 }

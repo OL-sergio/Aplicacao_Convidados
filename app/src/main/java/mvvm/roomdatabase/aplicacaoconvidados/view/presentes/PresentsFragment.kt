@@ -1,4 +1,4 @@
-package mvvm.roomdatabase.aplicacaoconvidados.view.todos
+package mvvm.roomdatabase.aplicacaoconvidados.view.presentes
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import mvvm.roomdatabase.aplicacaoconvidados.databinding.FragmentTodosBinding
+import mvvm.roomdatabase.aplicacaoconvidados.databinding.FragmentPresentsBinding
 
-class TodosFragment : Fragment() {
 
-    private var _binding: FragmentTodosBinding? = null
+class PresentsFragment : Fragment() {
+
+    private var _binding: FragmentPresentsBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,16 +23,16 @@ class TodosFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val todosViewModel =
-            ViewModelProvider(this).get(TodosViewModel::class.java)
+        val presentesViewModel =
+            ViewModelProvider(this).get(PresentsViewModel::class.java)
 
-        _binding = FragmentTodosBinding.inflate(inflater, container, false)
+        _binding = FragmentPresentsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textTodos
-        todosViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+
+
+
+
         return root
     }
 

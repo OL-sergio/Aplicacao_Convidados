@@ -13,10 +13,13 @@
         <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/app_bar_main.xml" value="0.18" />
         <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/content_main.xml" value="0.25" />
+        <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/fragment_absents.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/fragment_all_guests.xml" value="0.1" />
         <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/fragment_ausentes.xml" value="0.1" />
         <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/fragment_gallery.xml" value="0.15208333333333332" />
         <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/fragment_home.xml" value="0.15208333333333332" />
         <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/fragment_presentes.xml" value="0.1" />
+        <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/fragment_presents.xml" value="0.1" />
         <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/fragment_todos.xml" value="0.13229166666666667" />
         <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/layout/nav_header_main.xml" value="0.15208333333333332" />
         <entry key="..\:/Users/sergi/AndroidStudioProjects/AplicacaoConvidados/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />

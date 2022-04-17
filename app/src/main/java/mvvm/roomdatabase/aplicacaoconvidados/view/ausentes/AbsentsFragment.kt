@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import mvvm.roomdatabase.aplicacaoconvidados.databinding.FragmentAusentesBinding
+import mvvm.roomdatabase.aplicacaoconvidados.databinding.FragmentAbsentsBinding
 
-class AusentesFragment : Fragment() {
 
-    private var _binding: FragmentAusentesBinding? = null
+class AbsentsFragment : Fragment() {
+
+    private var _binding: FragmentAbsentsBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,16 +23,15 @@ class AusentesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val ausentesViewModel =
-            ViewModelProvider(this).get(AusentesViewModel::class.java)
+        val absentsViewModel =
+            ViewModelProvider(this).get(AbsentsViewModel::class.java)
 
-        _binding = FragmentAusentesBinding.inflate(inflater, container, false)
+        _binding = FragmentAbsentsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textAusentes
-        ausentesViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+
+
+
         return root
     }
 
