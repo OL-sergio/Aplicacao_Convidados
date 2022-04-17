@@ -1,6 +1,7 @@
 package mvvm.roomdatabase.aplicacaoconvidados.view.guest
 
 
+import android.annotation.SuppressLint
 import android.app.Application
 
 import androidx.lifecycle.AndroidViewModel
@@ -12,6 +13,7 @@ import mvvm.roomdatabase.aplicacaoconvidados.service.repository.GuestRepository
 class GuestFormViewModel(application: Application) : AndroidViewModel(application){
 
 
+    @SuppressLint("StaticFieldLeak")
     private val mContext = application.applicationContext
     private val mGuestRepository: GuestRepository = GuestRepository.getInstance(mContext)
 
@@ -20,8 +22,7 @@ class GuestFormViewModel(application: Application) : AndroidViewModel(applicatio
 
     fun saveFormViewModel(name : String, present : Boolean ){
         val guest = GuestModel( name = name, present = present)
-        mGuestRepository.saveRepository(guest)
-
+        mSaveGuest.value = mGuestRepository.saveRepository(guest)
     }
 }
 
