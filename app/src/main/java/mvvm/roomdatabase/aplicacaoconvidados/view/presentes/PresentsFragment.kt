@@ -23,12 +23,9 @@ class PresentsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val presentesViewModel =
-            ViewModelProvider(this).get(PresentsViewModel::class.java)
-
+        val presentsFragment = ViewModelProvider(this).get(PresentsViewModel::class.java)
         _binding = FragmentPresentsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
 
 
 

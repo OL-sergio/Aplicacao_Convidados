@@ -20,4 +20,5 @@
     <string name="ausente">Ausente</string>
     <string name="confirmation">Confirmation</string>
     <string name="guardar">Guardar</string>
+    <string name="convidado">CONVIDADO</string>
 </resources>

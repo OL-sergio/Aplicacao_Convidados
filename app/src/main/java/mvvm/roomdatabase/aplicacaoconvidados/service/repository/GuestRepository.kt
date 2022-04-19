@@ -9,7 +9,7 @@ import mvvm.roomdatabase.aplicacaoconvidados.service.constants.DataBaseConstants
 import mvvm.roomdatabase.aplicacaoconvidados.service.model.GuestModel
 import java.lang.Exception
 
-class GuestRepository private constructor(context: Context){
+class GuestRepository(context: Context){
 
     //Singleton
     private var mGuestDatabaseHelper: GuestDatabaseHelper = GuestDatabaseHelper(context)
