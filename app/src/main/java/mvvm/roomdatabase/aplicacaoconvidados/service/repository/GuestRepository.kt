@@ -3,8 +3,6 @@ package mvvm.roomdatabase.aplicacaoconvidados.service.repository
 import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
-import android.content.LocusId
-import android.text.Selection
 import mvvm.roomdatabase.aplicacaoconvidados.service.constants.DataBaseConstants
 import mvvm.roomdatabase.aplicacaoconvidados.service.model.GuestModel
 import java.lang.Exception
@@ -21,7 +19,7 @@ class GuestRepository(context: Context){
             if (!::repository.isInitialized){
                 repository = GuestRepository(context)
             }
-            return GuestRepository(context)
+            return repository
         }
 
     }
@@ -93,9 +91,10 @@ class GuestRepository(context: Context){
             )
 
             val selection = DataBaseConstants.GUEST.COLUMNS.ID + " = ? "
-            val args = arrayOf(guest!!.id.toString())
+            val args = arrayOf(id.toString())
 
-            val cursor = db.query(DataBaseConstants.GUEST.TABLE_NAME,
+            val cursor = db.query(
+                DataBaseConstants.GUEST.TABLE_NAME,
                 projection,
                 selection,
                 args,

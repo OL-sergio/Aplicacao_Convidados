@@ -11,9 +11,8 @@ class GuestDatabaseHelper(context: Context) : SQLiteOpenHelper(context,  DATABAS
        db.execSQL(CREATE_TABLE_GUEST)
     }
 
-    override fun onUpgrade(db: SQLiteDatabase?, p1: Int, p2: Int) {
+    override fun onUpgrade(db: SQLiteDatabase?, olVersion: Int, newVersion: Int) { }
 
-    }
 
     companion object {
         private const val VERSION = 1
