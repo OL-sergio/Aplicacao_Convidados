@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicacaoConvidados">
         <activity
-            android:name="mvvm.roomdatabase.aplicacaoconvidados.view.guest.GuestFormActivity"
+            android:name="mvvm.roomdatabase.aplicacaoconvidados.view.GuestFormActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

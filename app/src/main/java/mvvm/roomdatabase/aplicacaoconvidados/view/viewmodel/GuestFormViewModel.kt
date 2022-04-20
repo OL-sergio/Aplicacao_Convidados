@@ -1,9 +1,8 @@
-package mvvm.roomdatabase.aplicacaoconvidados.view.guest
+package mvvm.roomdatabase.aplicacaoconvidados.view.viewmodel
 
 
 import android.annotation.SuppressLint
 import android.app.Application
-
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -25,7 +24,12 @@ class GuestFormViewModel(application: Application) : AndroidViewModel(applicatio
 
     fun saveFormViewModel(id : Int, name : String, present : Boolean ){
         val guest = GuestModel( id, name, present)
-        mSaveGuest.value = mGuestRepository.saveRepository(guest)
+
+        if (id == 0 ){
+            mSaveGuest.value = mGuestRepository.saveRepository(guest)
+        }else {
+            mSaveGuest.value = mGuestRepository.updateRepository(guest)
+        }
     }
 
     fun load(id :Int){

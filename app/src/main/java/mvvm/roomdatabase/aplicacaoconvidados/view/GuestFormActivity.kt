@@ -1,4 +1,4 @@
-package mvvm.roomdatabase.aplicacaoconvidados.view.guest
+package mvvm.roomdatabase.aplicacaoconvidados.view
 
 import android.os.Bundle
 import android.view.View
@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import mvvm.roomdatabase.aplicacaoconvidados.R
 import mvvm.roomdatabase.aplicacaoconvidados.databinding.ActivityGuestFormBinding
 import mvvm.roomdatabase.aplicacaoconvidados.service.constants.GuestConstants
-import mvvm.roomdatabase.aplicacaoconvidados.view.todos.AllGuestsViewModel
+import mvvm.roomdatabase.aplicacaoconvidados.view.viewmodel.GuestFormViewModel
 
 
 class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
@@ -25,9 +25,11 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
 
         mViewModel = ViewModelProvider(this)[GuestFormViewModel::class.java]
 
-        loadData()
         setListeners()
         observe()
+        loadData()
+
+        _binding!!.radioButtonSelectPresent.isChecked = true
 
     }
 
@@ -46,7 +48,7 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
             val name = _binding!!.editTextWriteName.text.toString()
             val present = _binding!!.radioButtonSelectPresent.isChecked
 
-            mViewModel!!.saveFormViewModel(id, name, present)
+            mViewModel!!.saveFormViewModel(mGuestID, name, present)
         }
     }
 

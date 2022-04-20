@@ -13,7 +13,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import mvvm.roomdatabase.aplicacaoconvidados.databinding.ActivityMainBinding
-import mvvm.roomdatabase.aplicacaoconvidados.view.guest.GuestFormActivity
+import mvvm.roomdatabase.aplicacaoconvidados.view.GuestFormActivity
 
 
 class MainActivity : AppCompatActivity() {

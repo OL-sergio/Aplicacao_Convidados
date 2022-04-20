@@ -56,7 +56,6 @@ class GuestRepository(context: Context){
         }catch (e: Exception){
             false
         }
-
     }
 
     fun deleteRepository(id : Int) :Boolean{
@@ -160,13 +159,12 @@ class GuestRepository(context: Context){
     }
 
     @SuppressLint("Range", "Recycle")
-    fun getPresentRepository() : List<GuestModel> {
+    fun getPresentGuestsRepository() : List<GuestModel> {
         val list : MutableList<GuestModel> = ArrayList()
         return try {
             val db = mGuestDatabaseHelper.readableDatabase
 
             val cursor = db.rawQuery("SELECT id, name, presence FROM Guest WHERE presence = 1", null)
-
 
             if (cursor != null && cursor.count > 0 ){
                 while (cursor.moveToNext()){
@@ -188,7 +186,7 @@ class GuestRepository(context: Context){
     }
 
     @SuppressLint("Range", "Recycle")
-    fun getAbsentRepository() : List<GuestModel> {
+    fun getAbsentGuestsRepository() : List<GuestModel> {
         val list : MutableList<GuestModel> = ArrayList()
         return try {
             val db = mGuestDatabaseHelper.readableDatabase

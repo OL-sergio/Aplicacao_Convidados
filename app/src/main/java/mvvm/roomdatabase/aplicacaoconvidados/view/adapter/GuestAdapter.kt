@@ -2,15 +2,11 @@ package mvvm.roomdatabase.aplicacaoconvidados.view.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
-import android.view.View.inflate
 import android.view.ViewGroup
-import androidx.core.content.res.ColorStateListInflaterCompat.inflate
 import androidx.recyclerview.widget.RecyclerView
 import mvvm.roomdatabase.aplicacaoconvidados.R
-import mvvm.roomdatabase.aplicacaoconvidados.databinding.ActivityGuestFormBinding.inflate
 import mvvm.roomdatabase.aplicacaoconvidados.service.model.GuestModel
 import mvvm.roomdatabase.aplicacaoconvidados.view.listener.GuestListener
-import mvvm.roomdatabase.aplicacaoconvidados.view.todos.AllGuestsFragment
 import mvvm.roomdatabase.aplicacaoconvidados.view.viewholder.GuestViewHolder
 
 class GuestAdapter : RecyclerView.Adapter<GuestViewHolder>() {
