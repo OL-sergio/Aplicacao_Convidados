@@ -18,7 +18,7 @@ class GuestsViewModel(application: Application) : AndroidViewModel(application) 
     fun loadRepository(filter: Int) {
 
         if (filter == GuestConstants.FILTER.EMPTY){
-            mGuestList.value = mGuestRepository.getAllGuestRepository()
+            mGuestList.value = mGuestRepository.getAllInvitedGuestRepository()
         } else if (filter == GuestConstants.FILTER.PRESENT){
             mGuestList.value = mGuestRepository.getPresentGuestsRepository()
         }else{
@@ -27,6 +27,7 @@ class GuestsViewModel(application: Application) : AndroidViewModel(application) 
     }
 
     fun deleteGuest(id : Int) {
-         mGuestRepository.deleteRepository(id)
+        val guestID = mGuestRepository.getOneGuestRepository(id)
+         mGuestRepository.deleteRepository(guestID)
     }
 }
