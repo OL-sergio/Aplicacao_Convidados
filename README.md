@@ -4,11 +4,21 @@
 
 # Convidados  
 
-- ...
+- The AplicationConvidados is simple example how to demonstrate the use of modern Android development tools ( MVVM, Room )
+
 
 ## Features ✨
 
-- ...
+- Register invited guest:
+  - Present 
+  - Absent
+- Update guest
+- Delete guest
+
+- Visualize guest:
+  - All 
+  - Present
+  - Absent
 
 ## Built With 🛠
 
