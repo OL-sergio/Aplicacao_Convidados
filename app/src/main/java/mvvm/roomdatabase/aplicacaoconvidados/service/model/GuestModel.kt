@@ -15,6 +15,6 @@ class GuestModel{
     var name :String = ""
 
     @ColumnInfo(name = "presence")
-    var present : Boolean = true
+    var present : Boolean = false
 
 }

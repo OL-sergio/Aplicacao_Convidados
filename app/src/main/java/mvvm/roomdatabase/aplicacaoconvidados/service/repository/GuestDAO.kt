@@ -7,13 +7,13 @@ import mvvm.roomdatabase.aplicacaoconvidados.service.model.GuestModel
 interface  GuestDAO {
 
     @Insert
-    fun saveDatabase(guestModel: GuestModel) : Long
+    fun saveDatabase(guestModel: GuestModel): Long
 
     @Update
-    fun updateDatabase(guestModel: GuestModel) : Int
+    fun updateDatabase(guestModel: GuestModel): Int
 
     @Delete
-    fun deleteDatabase(guestModel: GuestModel)
+    fun deleteDatabase(guest: GuestModel)
 
     @Query("SELECT * FROM Guest WHERE id = :id")
     fun getOneGuest(id: Int): GuestModel
