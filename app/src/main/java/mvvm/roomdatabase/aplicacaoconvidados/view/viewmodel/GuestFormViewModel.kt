@@ -16,8 +16,8 @@ class GuestFormViewModel(application: Application) : AndroidViewModel(applicatio
     private val mContext = application.applicationContext
     private val mGuestRepository: GuestRepository = GuestRepository(mContext)
 
-    private var mSaveGuest = MutableLiveData<Boolean>()
-    val saveGuest : LiveData<Boolean> = mSaveGuest
+    private var mSaveGuest = MutableLiveData<String>()
+    val saveGuest : LiveData<String> = mSaveGuest
 
     private var mGuest = MutableLiveData<GuestModel>()
     val guest : LiveData<GuestModel> = mGuest
@@ -29,10 +29,20 @@ class GuestFormViewModel(application: Application) : AndroidViewModel(applicatio
             this.present = present
         }
 
-        if (id == 0 ){
-            mSaveGuest.value = mGuestRepository.saveRepository(guest)
+        if (guest.id == 0 ){
+            if (mGuestRepository.saveRepository(guest)){
+                mSaveGuest.value = "Inserido com Sucesso"
+            } else {
+                mSaveGuest.value = "Falha"
+            }
+
         }else {
-            mSaveGuest.value = mGuestRepository.updateRepository(guest)
+            if (mGuestRepository.updateRepository(guest)){
+                mSaveGuest.value = "Atulizaso com sucesso"
+            } else {
+                mSaveGuest.value = "Falha"
+            }
+
         }
     }
 

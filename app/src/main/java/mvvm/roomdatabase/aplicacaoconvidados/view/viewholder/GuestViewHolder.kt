@@ -1,6 +1,7 @@
 package mvvm.roomdatabase.aplicacaoconvidados.view.viewholder
 
 import android.app.AlertDialog
+import android.content.DialogInterface
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -29,11 +30,10 @@ class GuestViewHolder(
             AlertDialog.Builder(itemView.context)
                 .setTitle(R.string.remocao_convidado)
                 .setMessage(R.string.deseja_remover)
-                .setPositiveButton(R.string.remover){ dialog, which ->
-                    listener.onDelete(guestModel.id)
-
-                }
+                .setPositiveButton(R.string.remover) { _, _ ->
+                    listener.onDelete(guestModel.id) }
                 .setNegativeButton(R.string.cancelar,null)
+                .create()
                 .show()
 
             true
