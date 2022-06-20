@@ -41,7 +41,7 @@ class PresentsFragment : Fragment() {
 
         //Recyclerview
         // 1 - Create one Recyclerview
-        val allGuestsRecyclerView = root.findViewById<RecyclerView>(R.id.recyclerView_presents)
+        val allGuestsRecyclerView = binding.recyclerViewPresents
         // 2 - Define one Layout
         allGuestsRecyclerView.layoutManager = LinearLayoutManager(context)
         // 3 - Define one Adapter

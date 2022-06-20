@@ -40,7 +40,7 @@ class AllGuestsFragment: Fragment() {
 
         //Recyclerview
         // 1 - Create one Recyclerview
-        val allGuestsRecyclerView = root.findViewById<RecyclerView>(R.id.recyclerView_all_guests)
+        val allGuestsRecyclerView = binding.recyclerViewAllGuests
         // 2 - Define one Layout
         allGuestsRecyclerView.layoutManager = LinearLayoutManager(context)
         // 3 - Define one Adapter
